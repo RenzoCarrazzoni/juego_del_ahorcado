@@ -1,0 +1,500 @@
+body{
+    background: #F3F5FC;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.logo{
+    width: 31.09px;
+    height: 48px;
+    margin: 40px 0 0 84px;
+}
+
+.interfaz-inicio{
+
+    position: absolute;
+    width: 1200px;
+    height: 220px;
+    top: 50%;
+    left: 50%;
+    margin: -110px 0 0 -600px;
+
+    text-align: center;
+}
+
+.botones-inicio{
+    text-align: center;
+}
+
+.btn-iniciar{
+    width: 317px;
+    height: 114px;
+    background: #0A3871;
+    border: 1px;
+    border-radius: 24px;
+
+    margin-bottom: 38px;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.btn-agregar{
+    width: 280px;
+    height: 67px;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #0A3871;
+}
+
+.interfaz-juego{
+    visibility: hidden;
+    position: absolute;
+    width: 1200px;
+    height: 800px;
+    top: 50%;
+    left: 50%;
+    margin: -400px 0 0 -600px;
+    text-align: center;
+}
+
+.contenedorAhorcado{
+    position: absolute;
+    height: 400px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.tablero{
+    display: flex;
+    flex-direction: row;
+
+    margin: 550px auto 0 auto;
+    width: 1200px;
+    height: 92px;
+    align-items: center;
+    justify-content: center;
+}
+
+.letraTablero{
+    width: 90px;
+    height: 88px;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 100%;
+
+    text-align: center;
+
+    color: #0A3871;
+}
+
+.errores{
+    display: flex;
+    flex-direction: row;
+    width: 1200px;
+    height: 36px;
+    margin: 24px auto 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.letraDescartada{
+    width: 18px;
+    height: 36px;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 100%;
+
+    text-align: center;
+
+    color: #495057;
+
+    margin: 0px 12px 0px 12px;
+}
+
+.guion{
+    display: flex;
+    position: absolute;
+}
+
+.gameover{
+    visibility: hidden;
+    position: absolute;
+
+    width: 200px;
+    top: 390px;
+    left: 50%;
+
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 100%;
+    text-align: center;
+
+    color: red;
+
+    margin: 100px 0px 0px -100px;
+}
+
+.win{
+    visibility: hidden;
+    position: absolute;
+
+    width: 200px;
+    top: 390px;
+    left: 50%;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 100%;
+    text-align: center;
+
+    color: green;
+
+    margin: 75px 0px 0px -100px;
+}
+
+
+.boton-reset{
+    display: inline-block;
+    margin: 50px 12px 0px 0px;
+}
+
+.botonNuevoJuego{
+    width: 332px;
+    height: 67px;
+    align-items: center;
+
+    border: 1px solid #0A3871;
+    background: #0A3871;
+    box-sizing: border-box;
+    border-radius: 24px;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+
+.boton-rendirse{
+    display:inline-block;
+    margin: 50px 0px 0px 12px;
+}
+
+.botonDesistir{
+    width: 332px;
+    height: 67px;
+    align-items: center;
+
+    border: 1px solid #0A3871;
+    box-sizing: border-box;
+    border-radius: 24px;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+
+    color: #0A3871;
+}
+
+.interfaz-agregar{
+    visibility: hidden;
+    position: absolute;
+    width: 1200px;
+    height: 800px;
+    top: 50%;
+    left: 50%;
+    margin: -400px 0 0 -600px;
+
+}
+
+.ingresePalabra{
+    margin: 168px auto 80px auto;
+    width: 688px;
+    height: 283px;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 150%;
+
+    outline: none;
+    overflow: hidden;
+    color: #0A3871;
+}
+
+.ingresePalabra[placeholder]:empty:before {
+    content: attr(placeholder);
+    color: #0A3871;
+}
+
+.frame1{
+    width: 688px;
+    height: 18px;
+    margin: 0 auto;
+}
+
+.exclamacion{
+    height: 18px;
+    width: 18px;
+    margin: 0px;
+    float: left;
+}
+
+.textoFrame1{
+    display: inline-block;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: normal;
+
+    color: #495057;
+
+    opacity: 0.8;
+
+    margin: 0px 0px 0px 8px;
+}
+
+.botones-agregar{
+    width: 688px;
+    margin: 16px auto 0 auto;
+    display: flex;
+}
+
+.botonGuardar{
+    width: 332px;
+    height: 67px;
+    align-items: center;
+
+    border: 1px solid #0A3871;
+    background: #0A3871;
+    box-sizing: border-box;
+    border-radius: 24px;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    
+    color: #FFFFFF;
+
+    margin: 0px 12px 0px 0px;
+}
+
+.botonCancelar{
+    align-items: center;
+
+    width: 332px;
+    height: 67px;
+
+    border: 1px solid #0A3871;
+    box-sizing: border-box;
+    border-radius: 24px;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+
+    color: #0A3871;
+
+    margin: 0px 0px 0px 12px;
+}
+
+
+.pie-pagina p{
+    position: absolute;
+    width: 1200px;
+    left: 50%;
+    margin: 88vh 0 0 -600px;
+    text-align: center;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    color: #0A3871;
+}
+
+.fadeOut{
+    visibility: hidden;
+    opacity:0;
+}
+
+.fadeIn{
+    visibility: visible;
+    opacity: 100;
+}
+
+.show{
+    display: block;
+}
+
+.hide{
+    display: none;
+}
+
+.flex{
+    display: flex;
+}
+
+@media screen and (max-width:480px){
+    main{
+        width: auto;
+    }
+
+    .logo{
+        width: 15px;
+        height: 24px;
+        margin: 20px 0 0 42px;
+    }
+
+    .interfaz-inicio{
+        width: 360px;
+        height: 220px;
+        margin: -110px 0 0 -180px;
+    }
+
+    .interfaz-juego{
+        width: 360px;
+        height: 400px;
+        margin: -300px 0 0 -180px;
+    }
+
+    .contenedorAhorcado,.tablero, .errores{
+        width: 100%;
+    }
+
+    .tablero{
+        margin-top: 450px;
+        height: 46px;
+    }
+
+    .letraTablero{
+        width: 46px;
+        height: 42px;
+
+        font-family: Inter;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 21px;
+        line-height: 100%;
+    }
+
+    .errores{
+        margin-top: 4px;
+        height: 18px;
+    }
+
+    .letraDescartada{
+        width: 9px;
+        height: 18px;
+    
+        font-family: Inter;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 100%;
+    
+        text-align: center;
+    
+        color: #495057;
+    
+        margin: 0px 6px 0px 6px;
+    }
+
+    .win{
+        top: 330px;
+        font-size: 18px;
+    }
+
+    .gameover{
+        top: 305px;
+        font-size: 18px;
+    }
+
+    .interfaz-agregar{
+        width: 300px;
+        height: 400px;
+        margin: -200px 0 0 -150px;
+    }
+
+    .ingresePalabra{
+        width: 300px;
+        margin: 0;
+    }
+
+    .frame1, .botones-agregar{
+        width: 300px;
+        margin: 2px auto 0 auto;
+    }
+    
+    .botonGuardar{
+        margin: 0px 4px 0px 0px;
+        width:  146px;
+    }
+
+    .botonCancelar{
+        margin: 0px 0px 0px 4px;
+        width: 146px;
+    } 
+
+    .boton-reset{
+        display: inline-block;
+        margin: 4px 2px 0px 0px;
+    }
+    
+    .boton-rendirse{
+        margin: 4px 0 0 2px;
+    }
+
+    .botonDesistir, .botonNuevoJuego{
+        width: 146px;
+    }
+
+    .pie-pagina p{
+        width: 360px;
+        left: 50%;
+        margin: 90vh 0 0 -180px;
+    }
+
+
+}
